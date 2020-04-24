@@ -6,7 +6,7 @@
  * Time: 10:43
  */
 
-namespace Hyperf\ModelFilter;
+namespace Xiaowei\ModelFilter;
 
 use Hyperf\Database\Model\Builder;
 
