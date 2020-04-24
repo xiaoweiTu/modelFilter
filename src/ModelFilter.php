@@ -49,7 +49,20 @@ abstract  class ModelFilter
         return $this->query;
     }
 
-    
+    /**
+     * @param $method
+     * @param $args
+     * 支持直接 $this->where 的方式进行查询
+     * @return mixed|ModelFilter
+     */
+    public function __call($method, $args)
+    {
+        $resp = call_user_func_array([$this->query, $method], $args);
+
+        // Only return $this if query builder is returned
+        // We don't want to make actions to the builder unreachable
+        return $resp instanceof Builder ? $this : $resp;
+    }
 
     /**
      * 过滤参数
