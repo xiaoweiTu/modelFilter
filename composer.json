@@ -16,7 +16,7 @@
     "description": "model filter for hyperf",
     "autoload": {
         "psr-4": {
-            "ModelFilter\\": "src/"
+            "Xiaowei\\ModelFilter\\": "src/"
         }
     },
     "autoload-dev": {
@@ -47,7 +47,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "ModelFilter\\ConfigProvider"
+            "config": "Xiaowei\\ModelFilter\\ConfigProvider"
         }
     }
 }
