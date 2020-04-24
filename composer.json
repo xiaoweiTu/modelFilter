@@ -16,7 +16,7 @@
     "description": "model filter for hyperf",
     "autoload": {
         "psr-4": {
-            "Hyperf\\ModelFilter\\": "src/"
+            "ModelFilter\\": "src/"
         }
     },
     "autoload-dev": {
@@ -47,7 +47,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Hyperf\\ModelFilter\\ConfigProvider"
+            "config": "ModelFilter\\ConfigProvider"
         }
     }
 }
